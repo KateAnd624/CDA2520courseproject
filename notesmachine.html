@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Notes Machine</title>
+    <link href="notestyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div data-role="header" data-theme="a">
+      <div class="navbar">
+        <a class="active" href="#"><i class="menu"></i> Menu</a>
+        <a href="#"><i class="search"></i> Search</a>
+        <a href="#"><i class="refresh"></i> Refresh</a>
+        <a href="#"><i class="login"></i> Login</a>
+      </div>
+    </div>
+      <div class="container">
+        <h1>
+          <img src="postits.jpg" style="float:left"; width="50" height="50" alt="Stack of multicolored post-it note pads"/>
+          <h1 style="color:#4CAF50;"><center>Notes Machine</center></h1>
+        </h1>
+      </div>
+      <div class="container1">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="note">Your Note:</label>
+            </div>
+            <div class="col-75">
+              <textarea type="text" id="note" name="note" placeholder="Take notes..." style="height:100px"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="tag">Tag</label>
+            </div>
+            <div class="col-75">
+              <select id="tag" name="tag">
+                <option value="add">Add tag</option>
+                <option value="create">Create tag</option>
+              </select>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+              <label for="date">Date Due:</label>
+              </div>
+              <div class="col-75">
+              <input type="date" id="date" name="date">
+            </div>
+            </div>
+
+          <div class="row">
+            <input type="submit" value="Submit Note">
+          </div>
+        </form>
+      </div>
+<div class="flex-container">
+  <div>Note 1</div>
+  <div>Note 2</div>
+  <div>Note 3</div>
+  <div>Note 4</div>
+  <div>Note 5</div>
+  <div>Note 6</div>
+  <div>Note 7</div>
+  <div>Note 8</div>
+  <div>Note 9</div>
+  <div>Note 10</div>
+  <div>Note 11</div>
+  <div>Note 12</div>
+</div>
+
+</body>
+<div data-role="footer" data-theme="a" >
+		  <h4>Notes Machine &copy; 2021</h4>
+		</div>
+</html>
